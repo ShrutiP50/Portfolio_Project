@@ -1,0 +1,208 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: black;
+    padding:10;
+    height:100vh;
+    width:100vw;
+   
+
+
+
+}
+.header{
+    height:70px;
+    width:100vw;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    text-decoration: none;
+    padding:10px;
+    background-color:transparent;
+}
+.div1{
+    height:70px;
+    width:300px;
+    background-color:transparent;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    
+   
+}
+.div1 h3{
+    color:#80bbd2;
+    font-size: 27px;
+    font-family: "Baskervville SC", serif;
+    font-weight: 500;
+    font-style: normal;
+  
+    
+    
+}
+
+.div2 a{
+    text-decoration: none;
+    color:rgb(249, 253, 253);
+    margin-left: 30px;
+    transition-property: color;
+    transition: .3s;
+}
+.div2 a:hover, .div2 a.active{
+    
+    color:#157398;
+    /* margin-left: 30px; */
+}
+.body{
+    color: rgba(240, 248, 255, 0.421);
+}
+.home{
+    margin: 50px;
+    display:flex;
+    justify-content: space-between;
+    height:300px; 
+    width:95%;
+    align-items: center;
+    padding:0;
+    color: white;
+    /* background: url('home.jpeg') no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center; */
+}
+.home-content{
+    display: flex;
+    justify-content: space-between;
+}
+.home-content h1{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color:#1155a8;
+    line-height: 40px;
+
+}
+.home-content p{
+    font-size: 16px;
+    line-height: 30px;
+    margin:20px 0 0 ;
+    
+}
+.home-content .buttons{
+    width:345px;
+    height:40px;
+   
+    display: flex;
+    justify-content: space-between;
+}
+.buttons a{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:130px;
+    height:100%;
+    background:#00abf0;
+    border:2px solid #00abf0;
+    border-radius: 10px;
+    font-size: 20px;
+    position:relative;
+    color:#00abf0;
+    text-decoration: none;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.7s;
+}
+.buttons a:hover{
+    color: #00abf0;
+}
+.buttons a:nth-child(1){
+    color: black;
+}
+.buttons a:nth-child(2){
+    background-color: transparent;
+}
+.buttons a:nth-child(1):hover{
+    color: #00abf0; 
+ }
+.buttons a:nth-child(2)::before{
+    background: #00abf0;
+}
+.buttons a:nth-child(2):hover{
+   color: black; 
+}
+.buttons a::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    background: black;
+    z-index: -1;
+    transition:0.5s;
+
+
+}
+.buttons a:hover::before{
+    width:100%;
+    overflow: hidden;
+}
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width:170px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+.home-sci a{
+    position: relative;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height: 40px;
+    background: transparent;
+    border:2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    transition: .5s;
+    overflow: hidden;
+}
+.home-sci a:hover{
+    color: black;
+}
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: 0.5s;
+    overflow: hidden;
+} 
+.home-sci a:hover::before{
+    width: 100%;
+
+
+}  
+.im img{
+    margin-left: 0;
+    height:300px;
+    width:300px;
+} 
